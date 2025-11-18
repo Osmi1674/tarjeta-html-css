@@ -1,0 +1,54 @@
+/* 1. ESTILOS DEL CUERPO (BODY) */
+/* Prepara el fondo y usa Flexbox para centrar la tarjeta */
+body {
+    background-color: #f0f0f0; /* Fondo gris claro */
+    
+    /* Configuración de Flexbox para centrar la tarjeta vertical y horizontalmente */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;    /* Centra verticalmente */
+    
+    /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+    min-height: 100vh; 
+    margin: 0; /* Elimina márgenes por defecto del navegador */
+    font-family: sans-serif;
+}
+
+/* 2. ESTILOS DE LA TARJETA (.perfil-card) */
+/* Le da tamaño, fondo y un borde suave al contenedor principal */
+.perfil-card {
+    background-color: white;
+    width: 350px; /* Ancho fijo para la tarjeta */
+    padding: 30px;
+    border-radius: 12px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    text-align: center; /* Centra el texto dentro de la tarjeta */
+}
+
+/* 3. ESTILOS DE LA IMAGEN DE PERFIL */
+.perfil-foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Hace la imagen circular */
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* 4. ESTILOS DE LA LISTA DE HABILIDADES */
+.habilidades-contenedor ul {
+    list-style: none; /* Quita los puntos de la lista (bullets) */
+    padding: 0;
+    margin-top: 20px;
+}
+
+.habilidades-contenedor li {
+    /* Clave: Usa inline-block para que los elementos se queden en la misma línea, 
+       pero se pueda controlar el padding y margen. */
+    display: inline-block; 
+    background-color: #e0f7fa; /* Fondo suave para los elementos de la lista */
+    color: #00796b; /* Color de texto que contrasta */
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
